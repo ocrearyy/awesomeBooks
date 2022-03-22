@@ -1,25 +1,25 @@
-let nav = null;
-let listOfBooks = null;
-const emptyBookListPlaceHolder = '<p id=\'book-list-empty\'> Your Books list is empty, you can <a href=\'#new-book-section\' onclick=\'AddSwapEvenForLinks(this)\'>click here</a> to add new</p>';
-
 // dateDisplay import
-import displayTime  from "../modules/dateDisplay.js" 
-displayTime();
+import displayTime from '../modules/dateDisplay.js';
 
 // update any section with a given HTML
-import { updateSectionWithInnerHtml } from "../modules/updateSectionWithInnerHtml.js";
+import updateSectionWithInnerHtml from '../modules/updateSectionWithInnerHtml.js';
 
-//every book is Instance of a book class;
-import MyBook from "../modules/MyBook.js";
+// every book is Instance of a book class;
+// import MyBook from '../modules/MyBook.js';
 
 // update book list
-import { updateBookList } from "../modules/updateBookList.js";
+import updateBookList from '../modules/updateBookList.js';
 
 // add new book
-import { addNewBookEvent } from "../modules/addNewBookEvent.js";
+import addNewBookEvent from '../modules/addNewBookEvent.js';
 
 // swap sections
-import { swapSection } from "../modules/swapSection.js";
+import swapSection from '../modules/swapSection.js';
+
+let nav = null;
+let listOfBooks = null;
+
+displayTime();
 
 // associate event for the nav links and other elements if needed
 function AddSwapEvenForLinks(NavLink) {
@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   storeBooks = document.querySelector('#storeBooks');
   const navLinks = nav.querySelectorAll('a');
   listOfBooks.classList.add('active');
+  const emptyBookListPlaceHolder = null;
   if (storeBooks.childElementCount === 0) {
     updateSectionWithInnerHtml(storeBooks, emptyBookListPlaceHolder);
   }
@@ -57,4 +58,3 @@ document.addEventListener('DOMContentLoaded', () => {
     AddSwapEvenForLinks(link);
   }
 });
-

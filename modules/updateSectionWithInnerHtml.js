@@ -1,4 +1,5 @@
-export const updateSectionWithInnerHtml = (section, innerHTML) => {
-    section.innerHTML = innerHTML;
-  };
-  
+const updateSectionWithInnerHtml = (section, innerHTML) => {
+  section.innerHTML = innerHTML;
+};
+
+export default updateSectionWithInnerHtml;

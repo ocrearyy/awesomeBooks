@@ -1,3 +1,7 @@
+import updateSectionWithInnerHtml from './updateSectionWithInnerHtml.js';
+
+const emptyBookListPlaceHolder = '<p id=\'book-list-empty\'> Your Books list is empty, you can <a href=\'#new-book-section\' onclick=\'AddSwapEvenForLinks(this)\'>click here</a> to add new</p>';
+
 let storeBooks = null;
 
 export default class MyBook {
