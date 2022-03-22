@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Go Live](https://tadesse-alemayehu.github.io/Awesome-books/) 🙂
+[Go Live](https://oshanedesign.github.io/awesomeBooks/) 🙂
  
 ## Getting Started
 
